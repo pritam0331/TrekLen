@@ -1,0 +1,264 @@
+/* .flight {
+    text-align: center;
+}
+
+.flight h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: SK Curiosity;
+}
+
+.flight p{
+    font-size: 20px;
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.booking-section {
+    text-align: center;
+    padding: 0px 20px;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+.header-content {
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.subheading {
+    font-size: 16px;
+    color: grey;
+    margin-top: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    background: transparent;
+}
+
+.promo-card {
+    background: white;
+    padding: 20px;
+    /* width: auto;
+    height: auto; */
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.promo-image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.promo-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.promo-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.airplane-image img {
+    max-width: 100%;
+    height: 500px;
+    width: 100%;
+    margin-top: -110px;
+    margin-left: 20px;
+    background: transparent;
+    filter: drop-shadow(0px 0px 100px black);
+}
+
+.cta-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 25px;
+    margin-top: -20px;
+    text-align: start;
+}
+
+.flight-booking-container {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0,0,0,0.3);
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    background: none;
+  }
+
+  .nav-button, .support-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .nav-button.active {
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  .icon {
+    margin-right: 5px;
+    background: none;
+  }
+
+  .spacer {
+    flex-grow: 1;
+    background: none;
+  }
+
+  .booking-form {
+    background: none;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .trip-type, .location-inputs, .date-traveler-inputs, .bottom-options {
+    display: flex;
+    background: none;
+    margin-bottom: 20px;
+  }
+  
+
+  .radio-label{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 20px;
+    accent-color: white;
+    border-radius: 10px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .radio-label.selected {
+    background-color: black;
+    color: white;
+  }
+
+  .radio-label input {
+    margin-right: 5px;
+  }
+
+  .radio-labels{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* margin-right: 20px; */
+    background: none;
+    accent-color: black;
+    border-radius: 10px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .radio-labels.selected {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .radio-labels input {
+    margin-right: 5px;
+  }
+
+  .trip-select {
+    margin-left: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .trip-select option:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .input-field {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .arrow-icon {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+  }
+
+  .traveler-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .link-button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+  }
+
+  .link-button.secondary {
+    color: gray;
+  }
