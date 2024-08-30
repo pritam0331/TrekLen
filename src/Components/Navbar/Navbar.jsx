@@ -4,6 +4,7 @@ import './Navbar.css';
 function Navbar() {
   return (
     <div>
+      {/* sdfghjkl */}
       <header className="navbar">
         <h3 className="logo"><img src='' alt='Logo' className="logo-image"/>TUXIMO</h3>
         <nav className="navlist">
