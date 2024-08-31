@@ -1,9 +1,9 @@
 import React from 'react';
 import './Popular.css';
 import banaras from './banaras.jpg';
-import chennai from './chennai.jpg';
+import chennai from './goa.jpg';
 import delhi from './delhi.jpg';
-import goa from './goa.jpg';
+import goa from './chennai.jpg';
 
 const Popular = () => {
   const routes = [
