@@ -1,0 +1,100 @@
+.popular-routes-container {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
+  
+  .popular-routes-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .popular-routes-description {
+    color: #4B5563;
+    margin-bottom: 1rem;
+  }
+  
+  .country-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+  }
+  
+  .country-filter-button {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #D1D5DB;
+    white-space: nowrap;
+  }
+  
+  .country-filter-button:hover {
+    background-color: #F3F4F6;
+  }
+  
+  .routes-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .route-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 300px;
+  }
+  
+  .route-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .route-details {
+    padding: 1rem;
+  }
+  
+  .route-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .route-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #4B5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .route-type {
+    margin-right: 0.5rem;
+  }
+  
+  .route-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .route-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .book-button {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.375rem;
+  }
+  
+  .book-button:hover {
+    background-color: black;
+  }
+  

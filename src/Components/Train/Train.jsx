@@ -1,11 +1,12 @@
 import React from 'react'
 import SearchForm from "./SearchForm"
+import Popular from './Popular'
 
 function Train() {
   return (
     <div>
         <SearchForm/>
-      <h1>train</h1>
+        <Popular/>
     </div>
   )
 }
