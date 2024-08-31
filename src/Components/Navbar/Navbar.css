@@ -1,4 +1,8 @@
-* {
+*{
+    font-family: Audiowide;
+}
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +14,7 @@ header.navbar {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: whitesmoke;
+    background-color: transparent;
     /* border-bottom: 1px solid #ccc; */
 }
 
@@ -71,6 +75,56 @@ header.navbar {
     transition: background-color 0.3s;
     box-shadow: 3px 3px 10px black;
 }
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        padding: 20px;
+        margin-bottom: 100px;
+    }
+
+    .navlist{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #f2f2f2;
+    }
+
+    .navlist.active{
+        display: flex;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .navlist li{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    margin-left: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+}
+
 
 /* .btn:hover {
     background-color: darkgrey;
