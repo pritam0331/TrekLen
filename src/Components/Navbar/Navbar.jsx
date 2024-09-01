@@ -9,10 +9,10 @@ function Navbar() {
         <h3 className="logo">TrekLen</h3>
         <nav className="navlist">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/flight">Flight</Link></li>
-            <li><Link to="/train">Train</Link></li> 
-            <li><a href="">Bus</a></li>
+            <li><a href='/'>Home</a></li>
+            <li><a href="/flight">Flight</a></li>
+            <li><a href="/train">Train</a></li> 
+            <li><a href="/bus">Bus</a></li>
             <li><a href="">Hotel</a></li>
             <li><a href="">Customer Support</a></li>
           </ul>
