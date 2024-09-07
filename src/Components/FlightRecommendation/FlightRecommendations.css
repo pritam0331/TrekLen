@@ -1,0 +1,127 @@
+.flight-recommendations {
+  padding: 2rem;
+  background-color: white;
+  color: black;
+  max-width: 1200px;
+  margin: 22px auto; /* Center the entire container horizontally */
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;  
+  text-align: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligns h2 to the left and button to the right */
+  align-items: center; /* Centers content vertically within the header */
+  margin-bottom: 2rem;
+}
+.logo3 {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #d2df21;
+}
+.title-section {
+  /* Centering title-section horizontally and aligning content to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+}
+
+.title-section h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.logo3 {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #d2df21;
+}
+
+.see-more-btn {
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  gap: 1rem; /* Space between grid items */
+}
+
+.flight-card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #ffffff; /* Ensure text color is visible on dark background */
+  box-shadow: 0 0 30px rgb(0,0,0,0.3);
+}
+
+.flight-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.flight-info {
+  padding: 1rem;
+}
+
+.flight-route {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.flight-date {
+  color: #495057d6;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.flight-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-label {
+  color: #495057d6;
+  font-size: 0.8rem;
+}
+
+.price-amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f2d012;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .flight-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns layout for tablets */
+  }
+
+  .header {
+      flex-direction: column; /* Stack h2 and button vertically on smaller screens */
+      align-items: center;
+  }
+
+  .see-more-btn {
+      margin-top: 1rem; /* Adds space between the button and the title-section on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .flight-grid {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+  }
+}

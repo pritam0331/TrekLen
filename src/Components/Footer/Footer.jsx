@@ -1,70 +1,67 @@
-import React from 'react'
+import React from 'react';
+import { Instagram, Twitter, Facebook, Twitch, Music } from 'lucide-react';
 import './Footer.css'
 
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-        <footer className="footer">
-  <div className="waves">
-    <div className="wave" id="wave1" />
-    <div className="wave" id="wave2" />
-    <div className="wave" id="wave3" />
-    <div className="wave" id="wave4" />
-  </div>
-  <ul className="social-icon">
-    <li className="social-icon__item">
-      <a className="social-icon__link" href="#">
-        <ion-icon name="logo-facebook" />
-      </a>
-    </li>
-    <li className="social-icon__item">
-      <a className="social-icon__link" href="#">
-        <ion-icon name="logo-twitter" />
-      </a>
-    </li>
-    <li className="social-icon__item">
-      <a className="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin" />
-      </a>
-    </li>
-    <li className="social-icon__item">
-      <a className="social-icon__link" href="#">
-        <ion-icon name="logo-instagram" />
-      </a>
-    </li>
-  </ul>
-  <ul className="menu">
-    <li className="menu__item">
-      <a className="menu__link" href="#">
-        Home
-      </a>
-    </li>
-    <li className="menu__item">
-      <a className="menu__link" href="#">
-        About
-      </a>
-    </li>
-    <li className="menu__item">
-      <a className="menu__link" href="#">
-        Services
-      </a>
-    </li>
-    <li className="menu__item">
-      <a className="menu__link" href="#">
-        Team
-      </a>
-    </li>
-    <li className="menu__item">
-      <a className="menu__link" href="#">
-        Contact
-      </a>
-    </li>
-  </ul>
-  <p>©2021 Nadine Coelho | All Rights Reserved</p>
-</footer>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h2 className="logo">Horizone</h2>
+            <p className="mission">
+              Our mission is to equip modern explorers with cutting-edge, functional, and stylish
+              bags that elevate every adventure.
+            </p>
+          </div>
+          
+          <div className="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
 
-    </div>
-  )
-}
+          <div className="updates-social">
+            <div className="get-updates">
+              <h3>Get Updates</h3>
+              <div className="email-form">
+                <input type="email" placeholder="Enter your email" />
+                <button>Subscribe</button>
+              </div>
+            </div>
+            <div className="social-icons">
+              <Instagram />
+              <Twitter />
+              <Facebook />
+              <Twitch />
+              <Music />
+            </div>
+          </div>
+        </div>
+        
+        <div className="footer-legal">
+          <p>&copy;2024 Horizone. All rights reserved.</p>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <span> | </span>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

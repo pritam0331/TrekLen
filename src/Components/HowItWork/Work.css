@@ -1,0 +1,95 @@
+.ticket-booking-container {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 22px;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(0,0,0,0.3);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;  
+  text-align: center;
+}
+
+.ticket-booking-header {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 30px;
+}
+
+.ticket-booking-subheader {
+  color: #857e7e;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.ticket-booking-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo2 {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #d2df21;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.ticket-booking-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.ticket-booking-section {
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.ticket-booking-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.ticket-booking-section-number {
+  color: #efcd0d;
+  margin-right: 0.5rem;
+}
+
+.ticket-booking-section-title {
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.ticket-booking-icon {
+  color: #f0ce10;
+  font-size: 1.5rem;
+}
+
+.ticket-booking-content {
+  /* background-color: #4d4d4d; */
+  padding: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: 1px;
+}
+
+
+
+@media (max-width: 768px) {
+  .ticket-booking-layout {
+    flex-direction: column;
+  }
+}

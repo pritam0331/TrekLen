@@ -1,0 +1,143 @@
+.seamless-reservation {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 22px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0,0,0,0.3);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;  
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .best-featured {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  
+  .subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .logo2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: #d2df21;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .feature-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgb(0,0,0,0.3);
+  }
+  
+  .feature-card.wide {
+    grid-column: span 2;
+  }
+  
+  .feature-questions {
+    display: flex;
+    flex-direction: column;
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-highlight {
+    background-color: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-method {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .payment-icon {
+    background-color: #ffd700;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+  }
+  
+  .payment-email, .payment-number {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .gps-icon {
+    font-size: 3rem;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .country-flags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .flag {
+    font-size: 1.5rem;
+  }
+  
+  .plane-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .feature-card.wide {
+      grid-column: span 1;
+    }
+  }
