@@ -1,29 +1,19 @@
-// import React from 'react'
-// import SearchForm from "./SearchForm"
-// import Popular from './Popular'
-// import RailTravel from './RailTravel'
-
-// function Train() {
-//   return (
-//     <div>
-//         <SearchForm/>
-//         <Popular/>
-//         <RailTravel/>
-//     </div>
-//   )
-// }
-
-// export default Train;
-
 import React, { useState } from 'react';
 import './Train.css';
 import { TrainIcon, Headphones, User, Search, ArrowLeftRight, MapPin } from 'lucide-react';
-// import img from './train.jpeg';
-// import "" from '../Flight/plane2.jpeg';
-// import "" from './Rishikesh.jpg'
-// import "" from './Mathura.jpg'
-// import "" from './Ayodha.jpg'
-// import "" from './Ahemdabad.jpg'
+import agra from '../Train/agra.jpg';
+import delhi from '../Train/delhi.jpg';
+import banaras from '../Train/banaras.jpg';
+import chennai from '../Train/chennai.jpg';
+import goa from '../Train/goa.jpg';
+import jaipur from '../Train/jaipur.jpg';
+import kerala from '../Train/kerala.jpg';
+import deal1 from '../Train/deal1.jpg';
+import deal2 from '../Train/deal2.jpg';
+import j1 from '../Train/j1.jpg';
+import j2 from '../Train/j2.jpg';
+import j3 from '../Train/j3.jpg';
+
 
 function Train() {
   const [tripType, setTripType] = useState('oneWay');
@@ -31,29 +21,29 @@ function Train() {
   const [travelClass, setTravelClass] = useState('economy');
   const trips = [
     {
-      image: "",
-      title: 'Delhi to Rishikesh',
+      image: delhi,
+      title: 'Mumbai to Delhi',
       trainType: 'Executive train',
       company: 'CityHopper Express',
       price: '₹399',
     },
     {
-      image: "",
-      title: 'Varanasi to Mathura',
+      image: banaras,
+      title: 'Delhi to Vanarasi',
       trainType: 'Sleeper train',
       company: 'UrbanSwift Travel',
       price: '₹499',
     },
     {
-      image: "",
-      title: 'Mathutra to Ayodhya',
+      image: goa,
+      title: 'Kolkata to Chennai',
       trainType: 'Double-Decker train',
       company: 'MetroWave',
       price: '₹399',
     },
     {
-      image: "",
-      title: 'Hydrabad to Ahemdabad',
+      image: chennai,
+      title: 'Hyderabad to Goa',
       trainType: 'Economy train',
       company: 'TravelEase Transport',
       price: '₹999',
@@ -62,59 +52,31 @@ function Train() {
 
   const packages = [
     {
-      image: "",
-      title: 'Delhi to Rishikesh',
-      trainType: 'Executive train',
-      company: 'CityHopper Express',
-      price: '₹399',
-    },
-    {
-      image: "",
-      title: 'Varanasi to Mathura',
-      trainType: 'Sleeper train',
-      company: 'UrbanSwift Travel',
-      price: '₹499',
-    },
-    {
-      image: "",
-      title: 'Mathutra to Ayodhya',
+      image: goa,
+      title: 'Goa',
       trainType: 'Double-Decker train',
       company: 'MetroWave',
-      price: '₹399',
-    },
-    {
-      image: "",
-      title: 'Hydrabad to Ahemdabad',
-      trainType: 'Economy train',
-      company: 'TravelEase Transport',
       price: '₹999',
     },
     {
-      image: "",
-      title: 'Delhi to Rishikesh',
-      trainType: 'Executive train',
-      company: 'CityHopper Express',
-      price: '₹399',
-    },
-    {
-      image: "",
-      title: 'Varanasi to Mathura',
-      trainType: 'Sleeper train',
-      company: 'UrbanSwift Travel',
-      price: '₹499',
-    },
-    {
-      image: "",
-      title: 'Mathutra to Ayodhya',
+      image: agra,
+      title: 'Agra',
       trainType: 'Double-Decker train',
       company: 'MetroWave',
-      price: '₹399',
+      price: '₹999',
     },
     {
-      image: "",
-      title: 'Hydrabad to Ahemdabad',
-      trainType: 'Economy train',
-      company: 'TravelEase Transport',
+      image: kerala,
+      title: 'Kerala',
+      trainType: 'Double-Decker train',
+      company: 'MetroWave',
+      price: '₹999',
+    },
+    {
+      image: jaipur,
+      title: 'Jaipur',
+      trainType: 'Double-Decker train',
+      company: 'MetroWave',
       price: '₹999',
     },
   ];
@@ -132,8 +94,8 @@ function Train() {
     <>
       <section className="train-booking-section">
         <div className="train-header-content">
-          <h1 className="train-main-heading">navigate roads with comforts</h1>
-          <p className="train-subheading">Find Countless Flights Options & Deals To Various Destinations Around The World</p>
+          <h1 className="train-main-heading">Ride the Rails, Embrace the Journey</h1>
+          <p className="train-subheading">Find Countless Train Options & Deals To Various Destinations Around The World</p>
         </div>
 
         {/* <div className="train-content-wrapper">
@@ -148,13 +110,13 @@ function Train() {
         </div>
       </div> */}
 
-        <h2 className="train-cta-text">Start Booking Your Flight Now</h2>
+        <h2 className="train-cta-text">Start Booking Your Train Now</h2>
 
         <div className="train-booking-container">
           <div className="train-nav-buttons">
             <button className="train-nav-button active">
               <TrainIcon className="icon" />
-              Flights
+              Trains
             </button>
             <div className="train-spacer"></div>
             <button className="train-support-button">
@@ -277,15 +239,15 @@ function Train() {
 
       <div className="flight-deals-section">
         <div className="section-header">
-          <h2>Exclusive flight deals just for you!</h2>
+          <h2>Exclusive Journey deals just for you!</h2>
           <button className="see-all-button">See All</button>
         </div>
 
         <div className="deals-container">
           <div className="deal-card">
-            <img src={""} alt="Deal 1" className="deal-image" />
+            <img src={deal1} alt="Deal 1" className="deal-image" />
             <div className="deal-overlay">
-              <div className="deal-validity">Valid only on 2 Jan - 24 Jan 2024</div>
+              <div className="deal-validity">Valid only on 2 Oct - 24 Oct 2024</div>
               <h3>Exclusive Travel Offers Just For You!</h3>
               <p className="deal-percentage">30%</p>
               <p className="terms">*with Terms and Condition</p>
@@ -293,9 +255,9 @@ function Train() {
           </div>
 
           <div className="deal-card">
-            <img src={""} alt="Deal 2" className="deal-image" />
+            <img src={deal2} alt="Deal 2" className="deal-image" />
             <div className="deal-overlay">
-              <div className="deal-validity">Valid only on 10 Jan - 10 Feb 2024</div>
+              <div className="deal-validity">Valid only on 10 Nov - 10 Dec 2024</div>
               <h3>Enjoy Cashback on Your Journey</h3>
               <p className="deal-percentage">Up to 500k</p>
               <p className="terms">*with Terms and Condition</p>
@@ -318,6 +280,7 @@ function Train() {
         <div className="explore-left">
           <div className="explore-card">
             <div className="overlay">
+            <img src={j1} alt="explore 1" className="explore-image" />
               <h3>Explore more to get your comfort zone</h3>
               <p>Book your perfect stay with us.</p>
               <button className="booking-button">Booking Now →</button>
@@ -325,6 +288,7 @@ function Train() {
           </div>
           <div className="explore-card-small">
             <div className="overlay">
+            <img src={j2} alt="explore 1" className="explore-image" />
               <p>train & Travel Available</p>
               <h3>14,230</h3>
             </div>
@@ -333,6 +297,7 @@ function Train() {
 
         <div className="explore-right">
           <div className="overlay">
+          <img src={j3} alt="explore 1" className="explore-image" />
             <h2>Beyond accommodation, creating memories of a lifetime</h2>
           </div>
         </div>

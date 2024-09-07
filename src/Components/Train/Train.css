@@ -88,6 +88,126 @@
     filter: drop-shadow(0px 0px 100px black);
 }
 
+
+.explore-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.explore-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.explore-right {
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.explore-card, .explore-card-small, .explore-right {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.explore-card {
+  height: 300px;
+}
+
+.explore-card-small {
+  height: 150px;
+}
+
+.explore-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay h2, .overlay h3 {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.booking-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .explore-section {
+    flex-direction: column;
+  }
+
+  .explore-left, .explore-right {
+    width: 100%;
+  }
+
+  .explore-card {
+    height: 200px;
+  }
+
+  .explore-card-small {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-card {
+    height: 150px;
+  }
+
+  .explore-card-small {
+    height: 80px;
+  }
+
+  .explore-right {
+    padding: 10px;
+  }
+
+  .booking-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
 .train-cta-text {
     font-size: 24px;
     font-weight: bold;
