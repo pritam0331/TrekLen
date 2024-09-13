@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    /* background-color: black !important; */
   }
   
   .navbar {
@@ -8,7 +9,10 @@ body {
     justify-content: space-between !important;
     align-items: center !important;
     padding: 35px 20px !important;
-    background-color: transparent;
+    /* background: none; */
+    /* background-color: black; */
+    /* background-color: black; */
+    /* position: absolute !important; */
   }
   
   .brand {
