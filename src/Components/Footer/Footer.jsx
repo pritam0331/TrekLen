@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Twitter, Facebook, Twitch, Music } from 'lucide-react';
+import { Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
 import './Footer.css'
 
 const Footer = () => {
@@ -42,11 +42,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="social-icons">
-              <Instagram />
-              <Twitter />
-              <Facebook />
-              <Twitch />
-              <Music />
+              <Instagram className='icons'/>
+              <Twitter className='icons'/>
+              <Facebook className='icons'/>
+              <Linkedin className='icons'/>
             </div>
           </div>
         </div>
