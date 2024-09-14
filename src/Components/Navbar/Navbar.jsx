@@ -44,7 +44,7 @@ const Navbar = () => {
         <li><a href="/train">Train</a></li>
         <li><a href="/bus">Bus</a></li>
         <li><a href="/contact">Customer Services</a></li>
-        <button className="download-btn">Log-in</button>
+        <button className="download-btn"><a href="/signup-login">Log-in</a></button>
       </ul>
       <div className="menu-icon" onClick={toggleMenu}>
         <div className={`bar ${isOpen ? "bar1" : ""}`}></div>
