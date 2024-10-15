@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h2 className="logo">Horizone</h2>
+            <h2 className="logo">TrekLen</h2>
             <p className="mission">
               Our mission is to equip modern explorers with cutting-edge, functional, and stylish
               bags that elevate every adventure.
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-legal">
-          <p>&copy;2024 Horizone. All rights reserved.</p>
+          <p>&copy;2024 TrekLen. All rights reserved.</p>
           <div>
             <a href="#">Privacy Policy</a>
             <span> | </span>

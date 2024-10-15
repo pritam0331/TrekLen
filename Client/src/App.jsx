@@ -8,7 +8,9 @@ import './App.css'
 import Bus from './Components/Bus/Bus'
 import Footer from './Components/Footer/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './Components/Login/Login';
+// import Login from './Components/Login/Login';
+import SignupSignin from './Components/Signup/SignupSignin';
+import Signin from './Components/Signin/Signin';
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
         <Route path="/flight" element={<Flight />} />
         <Route path="/train" element={<Train />} />
         <Route path='/bus' element={<Bus/>}></Route>
-        <Route path='/signup-login' element={<Login/>}></Route>
+        <Route path='/signup' element={<SignupSignin/>}></Route>
+        <Route path='/signin' element={<Signin/>}></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -9,6 +9,8 @@
   margin-top: -125px;
   border-radius: 0 0 10px 10px;
   /* position: relative; */
+  z-index: 0;
+  /* position: relative; */
 }
 
 .flight-header-content {
@@ -20,16 +22,17 @@
 .flight-main-heading {
   font-size: 48px;
   font-weight: bold;
-  color: black;
+  color: darkslategray;
   text-transform: uppercase;
   background: none;
 }
 
 .flight-subheading {
   font-size: 16px;
-  color: black;
+  color: darkslategray;
   margin-top: 10px;
   background: none;
+  font-weight: 600;
 }
 
 /* .flight-content-wrapper {

@@ -1,8 +1,8 @@
-.bus-booking-section {
+.train-booking-section {
     text-align: center;
     padding: 0px 20px;
     background-color: whitesmoke;
-    background-image: url('./bus1.png');
+    background-image: url('./train4.jpg');
     background-size: cover;
     /* height: auto; */
     font-family: Arial, sans-serif;
@@ -10,28 +10,29 @@
     border-radius: 0 0 10px 10px;
 }
 
-.bus-header-content {
+.train-header-content {
     padding-bottom: 20px;
     background: transparent;
     padding-top: 110px;
 }
 
-.bus-main-heading {
+.train-main-heading {
     font-size: 48px;
     font-weight: bold;
-    color: black;
+    color: darkslategray;
     text-transform: uppercase;
     background: none;
 }
 
-.bus-subheading {
+.train-subheading {
     font-size: 16px;
-    color: black;
+    color: darkslategray;
     margin-top: 10px;
     background: none;
+    font-weight: 600;
 }
 
-/* .bus-content-wrapper {
+/* .train-content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +41,7 @@
     background: transparent;
 } */
 
-.bus-promo-card {
+.train-promo-card {
     background: white;
     padding: 20px;
     /* width: auto;
@@ -51,18 +52,18 @@
     margin-left: 20px;
 }
 
-.bus-promo-image {
+.train-promo-image {
     position: relative;
     width: 300px;
     height: 200px;
 }
 
-.bus-promo-image img {
+.train-promo-image img {
     width: 100%;
     border-radius: 10px;
 }
 
-.bus-discount-badge {
+.train-discount-badge {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -73,12 +74,12 @@
     font-size: 14px;
 }
 
-.bus-promo-card p {
+.train-promo-card p {
     margin-top: 10px;
     font-weight: bold;
 }
 
-.bus-image img {
+.train-image img {
     /* max-width: 2000px; */
     height: 300px;
     width: 65vw;
@@ -88,7 +89,127 @@
     filter: drop-shadow(0px 0px 100px black);
 }
 
-.bus-cta-text {
+
+.explore-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.explore-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.explore-right {
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.explore-card, .explore-card-small, .explore-right {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.explore-card {
+  height: 300px;
+}
+
+.explore-card-small {
+  height: 150px;
+}
+
+.explore-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay h2, .overlay h3 {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.booking-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .explore-section {
+    flex-direction: column;
+  }
+
+  .explore-left, .explore-right {
+    width: 100%;
+  }
+
+  .explore-card {
+    height: 200px;
+  }
+
+  .explore-card-small {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-card {
+    height: 150px;
+  }
+
+  .explore-card-small {
+    height: 80px;
+  }
+
+  .explore-right {
+    padding: 10px;
+  }
+
+  .booking-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+.train-cta-text {
     font-size: 24px;
     font-weight: bold;
     margin: 30px 25px;
@@ -99,7 +220,7 @@
     margin-top: 100px;
 }
 
-.bus-booking-container {
+.train-booking-container {
   position: relative;
     max-width: 100%;
     background-color: rgb(255, 255, 255, 0.8);
@@ -111,13 +232,13 @@
     bottom: 15px;
   }
 
-  .bus-nav-buttons {
+  .train-nav-buttons {
     display: flex;
     margin-bottom: 20px;
     background: none;
   }
 
-  .bus-nav-button, .bus-support-button {
+  .train-nav-button, .train-support-button {
     display: flex;
     align-items: center;
     padding: 10px 15px;
@@ -127,7 +248,7 @@
     cursor: pointer;
   }
 
-  .bus-nav-button.active {
+  .train-nav-button.active {
     border: 2px solid black;
     color: black;
     font-weight: bold;
@@ -140,24 +261,24 @@
     background: none;
   }
 
-  .bus-spacer {
+  .train-spacer {
     flex-grow: 1;
     background: none;
   }
 
-  .bus-booking-form {
+  .train-booking-form {
     background: none;
     padding: 20px;
     border-radius: 10px;
   }
 
-  .bus-trip-type, .bus-date-traveler-inputs, .bus-bottom-options {
+  .train-trip-type, .train-date-traveler-inputs, .train-bottom-options {
     display: flex;
     background: none;
     margin-bottom: 20px;
   }
   
-  .bus-bottom-options{
+  .train-bottom-options{
     margin-bottom: 0px;
   }
 
@@ -203,18 +324,18 @@
     margin-right: 5px;
   }
 
-  .bus-trip-select {
+  .train-trip-select {
     margin-left: auto;
     padding: 10px 20px;
     border-radius: 10px;
   }
 
-  .bus-trip-select option:hover{
+  .train-trip-select option:hover{
     background-color: black;
     color: white;
   }
 
-  .bus-input-field {
+  .train-input-field {
     flex-grow: 1;
     padding: 10px;
     margin-right: 10px;
@@ -222,7 +343,7 @@
     border-radius: 5px;
   }
 
-  .bus-arrow-icon {
+  .train-arrow-icon {
     display: flex;
     align-items: center;
     margin: 0 10px;
@@ -230,7 +351,7 @@
     border-radius: 50px;
   }
 
-  .bus-traveler-input {
+  .train-traveler-input {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
@@ -238,7 +359,7 @@
     padding: 5px;
   }
 
-  .bus-search-button {
+  .train-search-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,18 +371,18 @@
     cursor: pointer;
   }
 
-  .bus-link-button {
+  .train-link-button {
     background: none;
     border: none;
     color: blue;
     cursor: pointer;
   }
 
-  .bus-link-button.secondary {
+  .train-link-button.secondary {
     color: gray;
   }
 
-  .bus-location-and-date-inputs {
+  .train-location-and-date-inputs {
     display: flex;
     align-items: center;
     gap: 10px; /* Space between items */
@@ -277,12 +398,12 @@
     width: 50%;
   }
   
-  .bus-arrow-icon {
+  .train-arrow-icon {
     padding: 0 10px;
     background: none;
   }
   
-  .bus-traveler-input {
+  .train-traveler-input {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
@@ -290,7 +411,7 @@
     padding: 5px;
   }
   
-  .bus-search-button {
+  .train-search-button {
     background-color: black;
     color: white;
     border: none;
@@ -301,51 +422,51 @@
   }
 
   @media (max-width:882px){
-    .bus-booking-section{
+    .train-booking-section{
       margin-top: -150px;
     }
   }
   
   @media (max-width:768px){
-    .bus-booking-section{
+    .train-booking-section{
       margin-top: -170px;
     }
 
-    .bus-main-heading{
+    .train-main-heading{
       font-size: 35px;
     }
 
-    .bus-subheading{
+    .train-subheading{
       font-size: 15px;
     }
   }
 
   @media (max-width:630px){
-    .bus-booking-section{
+    .train-booking-section{
       margin-top: -210px;
     }
 
-    .bus-main-heading{
+    .train-main-heading{
       font-size: 25px;
     }
 
-    .bus-subheading{
+    .train-subheading{
       font-size: 12px;
     }
 
-    .bus-cta-text{
+    .train-cta-text{
       font-size: 20px;
     }
 
-    .bus-trip-type{
+    .train-trip-type{
       flex-direction: column;
     }
 
-    .bus-trip-select{
+    .train-trip-select{
       margin-left: 0px;
     }
 
-    .bus-location-and-date-inputs{
+    .train-location-and-date-inputs{
       flex-direction: column;
     }
 
@@ -353,28 +474,28 @@
       width: 100%;
     }
 
-    .bus-bottom-options{
+    .train-bottom-options{
       flex-direction: column;
     }
 
-    .bus-arrow-icon{
+    .train-arrow-icon{
       transform: rotate(90deg);
       transition: transform 0.3s ease;
     }
   }
 
-  .bus-top-route{
+  .train-top-route{
     margin-top: 50px;
     padding: 10px 20px;
   }
 
-  .bus-top-content h1{
+  .train-top-content h1{
     font-size: 35px;
     font-family: Audiowide;
     font-weight: bold;
   }
 
-  .bus-top-content p{
+  .train-top-content p{
     font-family: Audiowide;
     font-weight: 500;
     font-size: large;
@@ -441,7 +562,7 @@
     }
   }
 
-  .bus-top-packages{
+  .train-top-packages{
     margin-top: 50px;
     padding: 10px 20px;
   }
@@ -656,7 +777,7 @@
   .explore-right {
     width: 60%;
     position: relative;
-    background-image: url('./bus.jpeg'); /* Replace with your image path */
+    background-image: url('./train.jpeg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -669,7 +790,7 @@
   .explore-card {
     position: relative;
     height: 300px;
-    background-image: url('./buss.jpg'); /* Replace with your image path */
+    background-image: url('./trains.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
