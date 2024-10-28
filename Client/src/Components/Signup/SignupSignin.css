@@ -1,4 +1,4 @@
-.signup-signin-container {
+.signup-signin-container { 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -8,18 +8,21 @@
   }
   
   .signup-form {
-	width: 800px;
+	width: 60%;
 	padding: 2rem;
 	background: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-radius: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.25); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
   }
   
   h1 {
 	margin-bottom: 1.5rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
+	color: #333;
   }
 
   .btn{
@@ -28,28 +31,20 @@
 	justify-content: center;
 	padding: 0.75rem;
   }
-  
-  /* .btn1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #fff;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 0.75rem;
-	font-size: 0.9rem;
-	cursor: pointer;
-	transition: background 0.3s;
-	margin-bottom: 1.5rem;
-	width: 100%;
-  } */
-  
+
   .span {
 	display: block;
 	margin-bottom: 1.5rem;
-	font-size: 0.9rem;
-	color: #888;
+	font-size: 1rem;
+	color: #666;
 	text-align: center;
+  }
+
+  button.signup-button{
+
+	border-radius: 15px;
+	background-color: rgb(79, 155, 143);
+
   }
   
   .input-field1 {
@@ -57,122 +52,14 @@
 	padding: 0.75rem;
 	margin-bottom: 1rem;
 	border: 1px solid #ccc;
-	border-radius: 5px;
-	box-sizing: border-box;
+	border-radius: 10px;
 	background: #f2f2f2;
-	font-size: 0.9rem;
-  }
-  
-  .terms-container {
-	display: flex;
-	align-items: center;
-	margin-bottom: 1.5rem;
-  }
-  
-  .terms-container input[type="checkbox"] {
-	margin-right: 0.5rem;
-	accent-color:red
-  }
-  
-  .terms-container label {
-	font-size: 0.9rem;
-	color: #333;
-  }
-  
-  .signup-button {
-	width: 100%;
-	padding: 0.75rem;
-	border: none;
-	border-radius: 30px;
-	background-color: red;
-	color: white;
 	font-size: 1rem;
-	cursor: pointer;
-	transition: background 0.3s;
-  }
-  
-  .signup-button:hover {
-	background-color: red;
-	box-shadow: 0 5px 15px rgb(255, 39, 39);
-  }
-  
-  .signin-link {
-	margin-top: 1.5rem;
-	font-size: 0.9rem;
-	color: #333;
-	text-align: center;
-  }
-  
-  .signin-link a {
-	color: #ff5722;
-	text-decoration: none;
-  }
-  
-  .signin-link a:hover {
-	text-decoration: underline;
+	transition: border 0.3s;
   }
 
-  .error-message {
-	color: red;
-	font-size: 0.8rem;
-	margin-top: -0.5rem;
-	margin-bottom: 0.5rem;
-  }
-  .register {
-	padding-bottom: 1.5rem;
-	display: flex;
-	align-items: center;
-	gap: 8px; 
-	  }
-  .register input[type="radio"] {
-		accent-color: red;
-	  }
-  @media (max-width: 480px) {
-	
-	.signup-form  {
-	  padding: 1.5rem;
-	  width: 100%;
-	}
-  
-	h1 {
-	  font-size: 1.3rem;
-	}
-  
-	.google-button,
-	.input-field1,
-	.signup-button {
-	  padding: 0.6rem;
-	  font-size: 0.8rem;
-	}
-  
-	.span,
-	.terms-container label,
-	.signin-link {
-	  font-size: 0.8rem;
-	}
+  .input-field1:focus {
+	border: 1px solid #ff5722;
+	outline: none;
   }
   
-  @media (max-width: 320px) {
-	
-	.signup-form  {
-	  padding: 1.5rem;
-	  width: 100%;
-	}
-  
-	h1 {
-	  font-size: 1.2rem;
-	}
-  
-	.google-button,
-	.input-field1,
-	.signup-button {
-	  padding: 0.5rem;
-	  font-size: 0.7rem;
-	}
-  
-	.span,
-	.terms-container label,
-	.signin-link {
-	  font-size: 0.7rem;
-	}
-  }

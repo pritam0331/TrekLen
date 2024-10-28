@@ -8,13 +8,16 @@
 }
 
 .signin-form {
-  width: 800px;
+  width: 470px;
   padding: 2rem;
+  border: 1px solid black;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.25); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
-
+/*  */
 h1 {
   margin-bottom: 1.5rem;
   font-weight: bold;
@@ -75,7 +78,7 @@ h1 {
   width: 100%;
   border-radius: 25px;
   border: none;
-  background-color: red;
+  background-color: rgb(79, 155, 143);
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
@@ -87,10 +90,7 @@ h1 {
   transition: background-color 0.3s;
 }
 
-.signin-button:hover {
-  background-color: red;
-  box-shadow: 0 5px 15px rgb(255, 39, 39);
-}
+
 
 .signin-link {
   margin-top: 1rem;

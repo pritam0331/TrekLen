@@ -212,7 +212,7 @@ function SignupSignin() {
           <label htmlFor="terms">Accept the terms and Conditions</label>
         </div>
         {errors.terms && <p className="error-message">{errors.terms}</p>}
-        <button type="submit" className="signup-button">SIGN UP</button>
+        <button type="submit" className="signin-button">SIGN UP</button>
         <p className="signin-link">Already have an account? <a href="/signin">Sign in</a></p>
       </form>
     </div>
