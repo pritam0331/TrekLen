@@ -11,8 +11,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import Login from './Components/Login/Login';
 import SignupSignin from './Components/Signup/SignupSignin';
 import Signin from './Components/Signin/Signin';
-
-
+import CustomerService from './Components/CustomerService/CustomerService';
 function App() {
   return (
     <>      
@@ -23,6 +22,7 @@ function App() {
         <Route path="/flight" element={<Flight />} />
         <Route path="/train" element={<Train />} />
         <Route path='/bus' element={<Bus/>}></Route>
+        <Route path='/CustomerService' element={<CustomerService/>}></Route>
         <Route path='/signup' element={<SignupSignin/>}></Route>
         <Route path='/signin' element={<Signin/>}></Route>
       </Routes>
