@@ -43,7 +43,7 @@ const Navbar = () => {
         <li><a href="/flight">Flight</a></li>
         <li><a href="/train">Train</a></li>
         <li><a href="/bus">Bus</a></li>
-        <li><a href="/contact">Customer Services</a></li>
+        <li><a href="/CustomerService">Customer Services</a></li>
         <button className="download-btn"><a href="/signup">Log-in</a></button>
       </ul>
       <div className="menu-icon" onClick={toggleMenu}>

@@ -1,0 +1,132 @@
+.section{
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    margin-top: -125px;
+}
+
+.container {
+    padding-bottom: 1cm;
+    padding-top: 150px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px 0 0 15px; 
+}
+
+.contact-left h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.contact-left h2 {
+    font-size: 16px;
+    color: #3B3131;
+}
+
+.contact-left p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-left a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-form .input-group {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    margin: 0;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-group label {
+    margin: 0;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+
+.action-group {
+    display: flex;
+    gap: 10px;
+}
+
+.attachment-btn {
+    background: #f1f3f4;
+    color: #666;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.send-btn {
+    background: black;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-right {
+    flex: 1;
+    background: url('./travel.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px; 
+    border-radius: 0 15px 15px 0; 
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-right {
+        height: 200px; 
+    }
+}
