@@ -111,6 +111,7 @@ body {
   
     .nav-links.open {
       display: flex;
+      color: black;
     }
   
     .navbar {
@@ -129,6 +130,7 @@ body {
   
     .menu-icon {
       display: flex;
+      color: black;
     }
   }
   
