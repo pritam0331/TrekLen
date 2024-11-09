@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './CustomerService.css';
 
 function CustomerService() {
-  const [isAccepted, setIsAccepted] = useState(false); 
-
-  const handleCheckboxChange = () => {
-    setIsAccepted(!isAccepted); 
-  };
 
   return (
     <section className="section">
@@ -23,20 +18,7 @@ function CustomerService() {
             </div>
             <input type="email" placeholder="Email" required />
             <textarea placeholder="Message" required></textarea>
-            <div className="checkbox-group">
-              <input 
-                type="checkbox" 
-                id="terms" 
-                checked={isAccepted} 
-                onChange={handleCheckboxChange} 
-                required 
-              />
-              <label htmlFor="terms">
-                I accept the <a href="/terms" target="_blank" rel="noopener noreferrer">terms and conditions</a>.
-              </label>
-            </div>
             <div className="action-group">
-              <button type="button" className="attachment-btn">Add attachment</button>
               <button type="submit" className="send-btn">Send message</button>
             </div>
           </form>
