@@ -358,7 +358,7 @@ const CustomerService = () => {
           <div className="contact-left">
             <h1>We'd love to help</h1>
             <h2>Reach out and we will get in touch within 24 hours</h2>
-            <p>Or reach us via: <a href="mailto:TrekLen@gmail.com">TrekLen@gmail.com</a></p>
+            <p>Or reach us via: <a href="mailto:treklenn@gmail.com">treklenn@gmail.com</a></p>
             
             {submitStatus.message && (
               <div className={`alert ${submitStatus.type}`}>

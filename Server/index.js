@@ -68,21 +68,11 @@ app.post('/api/google-login', async (req, res) => {
     res.status(200).json(user);
   });
 
-  // Create nodemailer transporter
-const transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'TrekLen@gmail.com', // Your Gmail address
-        pass: 'Treklen@0321' // Your Gmail password or app-specific password
-    }
-});
-
-// Test the transporter
-transporter.verify((error, success) => {
-    if (error) {
-        console.log(chalk.red('Error setting up email transporter:', error));
-    } else {
-        console.log(chalk.green('Server is ready to send emails'));
+        user: 'treklenn@gmail.com',
+        pass: 'ghwt jfjd admx kxjr',
     }
 });
 
@@ -95,7 +85,7 @@ transporter.verify((error, success) => {
         await newContact.save();
 
         const mailOptions = {
-            from: 'TrekLen@gmail.com',
+            from: 'treklenn@gmail.com',
             to: email,
             subject: 'Welcome to Treklen',
             text: `Dear ${firstname} ${lastname},
