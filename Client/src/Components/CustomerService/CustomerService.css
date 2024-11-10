@@ -6,7 +6,28 @@
     min-height: 100vh;
 }
 
-.container {
+.input-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .error {
+    border-color: #ff4444 !important;
+  }
+  
+  .error-message {
+    color: #ff4444;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .input-group .input-wrapper {
+    flex: 1;
+  }
+
+.container1 {
     padding: 150px 20px 1cm;
     width: 100%;
     max-width: 1440px;
@@ -41,11 +62,11 @@
 .contact-left h2 {
     font-size: clamp(14px, 2vw, 16px);
     color: #3B3131;
-    margin-left: min(5em, 10%);
+    text-align: center;
 }
 
 .contact-left p {
-    margin-left: min(8em, 15%);
+    text-align: center;
     margin-bottom: 30px;
     color: #666;
     font-size: clamp(14px, 1.5vw, 16px);
@@ -145,6 +166,9 @@
 }
 
 @media (max-width: 480px) {
+    .section{
+        margin-top: -165px;
+    }
     .container {
         padding: 100px 15px 1cm;
     }

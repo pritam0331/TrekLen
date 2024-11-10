@@ -4,9 +4,12 @@ const port = 3004
 const chalk = require('chalk')
 require('./Config/dbConn')
 const User = require('./Config/User')
+const Contact = require('./Config/Contact')
 const cors = require('cors')
 const bodyparser = require('body-parser')
 const google = require('./Config/LoginWithGoogle')
+const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 app.use(cors())
 
@@ -64,3 +67,56 @@ app.post('/api/google-login', async (req, res) => {
     }
     res.status(200).json(user);
   });
+
+  // Create nodemailer transporter
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'TrekLen@gmail.com', // Your Gmail address
+        pass: 'Treklen@0321' // Your Gmail password or app-specific password
+    }
+});
+
+// Test the transporter
+transporter.verify((error, success) => {
+    if (error) {
+        console.log(chalk.red('Error setting up email transporter:', error));
+    } else {
+        console.log(chalk.green('Server is ready to send emails'));
+    }
+});
+
+  app.post('/contact', async (req, res) => {
+    try {
+        const { fullname, email, phone, message } = req.body;
+        const { firstname, lastname } = fullname;
+
+        const newContact = new Contact({ fullname, email, phone, message });
+        await newContact.save();
+
+        const mailOptions = {
+            from: 'TrekLen@gmail.com',
+            to: email,
+            subject: 'Welcome to Treklen',
+            text: `Dear ${firstname} ${lastname},
+
+\n\nThank you for getting in touch with us. We appreciate your effort and look forward to helping those in need.
+
+Best regards,
+TrekLen Team`
+        };
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.log(chalk.red('Error sending email:', error));
+                return res.status(500).json({ alert: 'Data saved, but error occurred while sending email.' });
+            }
+            console.log('Email sent:', info.response);
+            res.status(201).json({ alert: 'Contact form data saved and email sent successfully' });
+        });
+
+    } catch (error) {
+        console.log(chalk.inverse.red('Error saving contact form data:', error));
+        res.status(500).json({ alert: 'Error occurred while saving data' });
+    }
+});

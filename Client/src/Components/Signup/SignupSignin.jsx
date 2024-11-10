@@ -140,12 +140,12 @@ function SignupSignin() {
     <div className="signup-signin-container">
       <form ref={formRef} onSubmit={handleSubmit} className='signup-form'>
         <h1>Create Account</h1>
-        <div className='register'>
+        {/* <div className='register'>
           Register As &nbsp;
           <input type="radio" name="role" value="user" defaultChecked onChange={(e) => setRole(e.target.value)} required />User
           <input type="radio" name="role" value="admin" onChange={(e) => setRole(e.target.value)} required />&nbsp;Admin
 
-        </div>
+        </div> */}
         {role === "admin" ? (
           <input 
             type="text" 
