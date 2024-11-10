@@ -159,7 +159,7 @@ function SignupSignin() {
           <>
             <div className='btn'>
               <GoogleButton 
-                style={{background:"white", color:"grey", width:400}} 
+                style={{background:"white", color:"black", width:350}} 
                 onClick={() => login()}
               />
             </div>
@@ -209,7 +209,7 @@ function SignupSignin() {
             checked={termsAccepted}
             onChange={(e) => setTermsAccepted(e.target.checked)}
           />
-          <label htmlFor="terms">Accept the terms and Conditions</label>
+          <label htmlFor="terms">Accept the Terms and Conditions</label>
         </div>
         {errors.terms && <p className="error-message">{errors.terms}</p>}
         <button type="submit" className="signin-button">SIGN UP</button>
