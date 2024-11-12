@@ -9,7 +9,8 @@ import Bus from './Components/Bus/Bus'
 import Footer from './Components/Footer/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import Login from './Components/Login/Login';
-import SignupSignin from './Components/Signup/SignupSignin';
+// import Signup from './Components/Signup/Signup';
+import Signup from './Components/Signup/Signup';
 import Signin from './Components/Signin/Signin';
 import CustomerService from './Components/CustomerService/CustomerService';
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Route path="/train" element={<Train />} />
         <Route path='/bus' element={<Bus/>}></Route>
         <Route path='/CustomerService' element={<CustomerService/>}></Route>
-        <Route path='/signup' element={<SignupSignin/>}></Route>
+        <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/signin' element={<Signin/>}></Route>
       </Routes>
       <Footer/>

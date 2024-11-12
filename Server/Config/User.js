@@ -1,8 +1,9 @@
 const mongoose  = require('mongoose')
 const UserSchema = mongoose.Schema({
-    name:{
+    username:{
         type:String,
-        required:[true,'name is required']
+        required:[true,'name is required'],
+        unique:true
     },
     email:{
         type:String,
@@ -13,11 +14,6 @@ const UserSchema = mongoose.Schema({
         type:String,
         required:[true,'password is required']
     },
-    role:{
-        type:String,
-        enum:['admin','user'],
-        default:'user'
-        }
 })
 
 module.exports = mongoose.model('signup',UserSchema)

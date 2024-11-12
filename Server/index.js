@@ -25,18 +25,44 @@ app.listen(port, (err) => {
     }
 });
 
-app.post('/', async (req, res) => {
-    const { name, email, password, role } = req.body;
-    const validRole = ['user', 'admin'].includes(role) ? role : 'user';
+const router = express.Router();
+
+router.post('/', async (req, res) => {
+    const { username, email, password } = req.body;
+
     try {
-        const newUser = new User({ name, email, password, role: validRole });
-        const savedUser = await newUser.save();
-        res.status(201).json(savedUser);
+        // Check if username or email already exists
+        const existingUser = await User.findOne({ $or: [{ username }, { email }] });
+
+        if (existingUser) {
+            if (existingUser.username === username) {
+                return res.status(409).json({ field: 'username', message: 'Username already taken' });
+            }
+            if (existingUser.email === email) {
+                return res.status(409).json({ field: 'email', message: 'Email already in use' });
+            }
+        }
+
+        // Hash password before saving
+        // const hashedPassword = await bcrypt.hash(password, 10);
+
+        // Create new user
+        const newUser = new User({
+            username,
+            email,
+            password
+        });
+
+        await newUser.save();
+        res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
-        console.log(chalk.inverse.red('Error saving user:', error));
-        res.status(500).json({ message: 'Error saving user data' });
+        console.error('Error during signup:', error);
+        res.status(500).json({ message: 'Server error' });
     }
 });
+
+module.exports = router;
+
 
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
@@ -57,6 +83,8 @@ app.post('/login', async (req, res) => {
         res.status(500).json({ message: 'An error occurred during login' });
     }
 });
+
+
 
 app.post('/api/google-login', async (req, res) => {
     const { googleId, email, name, profilePic } = req.body;
