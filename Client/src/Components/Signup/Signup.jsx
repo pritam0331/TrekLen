@@ -4,6 +4,7 @@ import GoogleButton from 'react-google-button';
 import { useGoogleLogin } from '@react-oauth/google';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Signup = () => {
     const [username, setUserName] = useState('');
@@ -14,6 +15,7 @@ const Signup = () => {
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
     const formRef = useRef(null);
+    const [showPassword, setShowPassword] = useState(false);
 
     const login = useGoogleLogin({
         onSuccess: (codeResponse) => setUser(codeResponse),
@@ -196,6 +198,13 @@ const Signup = () => {
                                 {errors.password && (
                                     <div className="error-message">{errors.password}</div>
                                 )}
+                                <button
+                                    type="button"
+                                    className="toggle-password"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                    >
+                                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                                </button>
                             </div>
 
                             <div className="terms-container">
