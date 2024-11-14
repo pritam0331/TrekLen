@@ -480,7 +480,7 @@ h1 {
 .error-message1 {
   color: red;
   font-size: 0.8rem;
-  margin-top: 0.8rem;
+  margin-top: -1rem;
   margin-bottom: 0.5rem;
 }
 
