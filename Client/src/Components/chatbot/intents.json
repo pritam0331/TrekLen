@@ -1,0 +1,126 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good day",
+        "What's up?"
+      ],
+      "responses": [
+        "Hello! Welcome to Treklen, your travel booking companion.",
+        "Hi there! How can I assist you with your travel plans today?",
+        "Hey! Ready to explore travel options with Treklen?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "See you",
+        "Bye",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Visit Treklen anytime for your travel needs.",
+        "See you soon! Safe travels.",
+        "Bye! Wishing you a smooth journey ahead."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Much appreciated",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome! Happy to help with Treklen.",
+        "Anytime! Let us know if you need more travel assistance.",
+        "Glad I could assist you with your travel plans!"
+      ]
+    },
+    {
+      "tag": "platform_overview",
+      "patterns": [
+        "What is Treklen?",
+        "Tell me about Treklen",
+        "How does Treklen work?",
+        "What can I do with Treklen?"
+      ],
+      "responses": [
+        "Treklen is a travel booking platform where you can book flights, buses, and trains with ease.",
+        "With Treklen, you can plan and book your travel across different modes, all in one place.",
+        "Treklen helps you find and book flights, buses, and trains for a seamless travel experience."
+      ]
+    },
+    {
+      "tag": "booking",
+      "patterns": [
+        "How do I book a ticket?",
+        "Can I book a flight, bus, or train?",
+        "How do I make a reservation on Treklen?"
+      ],
+      "responses": [
+        "Booking is easy on Treklen. Just choose your travel mode, enter your details, and confirm your reservation!",
+        "To book a flight, bus, or train, select your preferred option, fill in the details, and we’ll handle the rest.",
+        "Start by choosing the travel mode (flight, bus, or train), add your journey details, and book with confidence on Treklen."
+      ]
+    },
+    {
+      "tag": "flight_inquiry",
+      "patterns": [
+        "Can I book a flight here?",
+        "Do you offer flights?",
+        "How do I book a flight?"
+      ],
+      "responses": [
+        "Yes, you can book flights with Treklen. Head to the flights section, select your route, and book!",
+        "Treklen offers a range of flights for booking. Just go to the flight section, add your details, and complete the booking.",
+        "To book a flight, simply go to the flights section, choose your destination, and confirm your booking!"
+      ]
+    },
+    {
+      "tag": "train_inquiry",
+      "patterns": [
+        "Can I book a train here?",
+        "Do you offer train bookings?",
+        "How do I book a train?"
+      ],
+      "responses": [
+        "Yes, you can book trains with Treklen. Visit the train section, add your journey details, and complete the booking.",
+        "To book a train, head over to the train section, select your departure and arrival points, and book!",
+        "Train bookings are available on Treklen. Just go to the train section, enter your details, and confirm your reservation."
+      ]
+    },
+    {
+      "tag": "bus_inquiry",
+      "patterns": [
+        "Can I book a bus here?",
+        "Do you offer bus bookings?",
+        "How do I book a bus?"
+      ],
+      "responses": [
+        "Yes, you can book buses with Treklen. Visit the bus section, select your route, and finalize your booking.",
+        "Treklen allows bus bookings. Go to the bus section, add your travel details, and complete the reservation.",
+        "Booking a bus is simple. Just go to the bus section, enter your journey information, and confirm!"
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need help with Treklen",
+        "Who can I contact for support?",
+        "Is there any support available?"
+      ],
+      "responses": [
+        "I'm here to help! If you need further assistance, please reach out to our Treklen support team.",
+        "You can get help right here, or contact our support team for additional assistance with Treklen.",
+        "Our support team is available if you need help! Just let me know your query."
+      ]
+    }
+  ]
+}
