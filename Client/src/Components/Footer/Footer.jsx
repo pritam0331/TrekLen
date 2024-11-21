@@ -53,9 +53,9 @@ const Footer = () => {
         <div className="footer-legal">
           <p>&copy;2024 TrekLen. All rights reserved.</p>
           <div>
-            <a href="#">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
             <span> | </span>
-            <a href="#">Terms of Service</a>
+            <a href="/terms">Terms of Service</a>
           </div>
         </div>
       </div>
