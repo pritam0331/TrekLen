@@ -119,9 +119,9 @@ function Train() {
               Trains
             </button>
             <div className="train-spacer"></div>
-            <button className="train-support-button">
+            <button className="train-support-button"><a className="contact" href="/CustomerService">
               <Headphones className="icon" />
-              Customer Support
+              Customer Support</a>
             </button>
           </div>
 
@@ -131,20 +131,22 @@ function Train() {
                 <input type="radio" name="tripType" checked={tripType === 'oneWay'} onChange={() => setTripType('oneWay')} />
                 One Way
               </label>
-              <label className={`radio-label ${tripType === 'roundTrip' ? 'selected' : ''}`}>
+              {/* <label className={`radio-label ${tripType === 'roundTrip' ? 'selected' : ''}`}>
                 <input type="radio" name="tripType" checked={tripType === 'roundTrip'} onChange={() => setTripType('roundTrip')} />
                 Round Trip
               </label>
               <label className={`radio-label ${tripType === 'multiCity' ? 'selected' : ''}`}>
                 <input type="radio" name="tripType" checked={tripType === 'multiCity'} onChange={() => setTripType('multiCity')} />
                 Multi-City
-              </label>
+              </label> */}
               <select className="train-trip-select" value={travelClass}
                 onChange={(e) => setTravelClass(e.target.value)}>
-                <option value="economy">Economy</option>
-                <option value="premiumEconomy">Premium Economy</option>
-                <option value="traininess">traininess Class</option>
-                <option value="first">First Class</option>
+                <option value="SL">SL</option>
+                <option value="2S">2S</option>
+                <option value="3E">3E</option>
+                <option value="3AC">3AC</option>
+                <option value="" className="2AC">2AC</option>
+                <option value="" className="1AC">1AC</option>
               </select>
             </div>
 
@@ -155,9 +157,9 @@ function Train() {
               </div>
               <input type="text" placeholder="Destination" className="input-field" />
               <input type="text" placeholder="Depart Date" className="input-field" />
-              {tripType === 'roundTrip' && (
+              {/* {tripType === 'roundTrip' && (
                 <input type="text" placeholder="Return Date" className="input-field" />
-              )}
+              )} */}
               <div className="train-traveler-input">
                 <User size={18} className="icon" />
                 <input type="number" value={passengers} defaultValue={1} min={1} className="input-field" onChange={(e) => setPassengers(e.target.value > 6 ? 6 : e.target.value)} />
@@ -170,10 +172,10 @@ function Train() {
                 <input type="radio" name="fareType" checked={fareType === 'regular'} onChange={() => setFareType('regular')} />
                 Regular Fare
               </label>
-              <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
+              {/* <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
                 <input type="radio" name="fareType" checked={fareType === 'student'} onChange={() => setFareType('student')} />
                 Student Fare
-              </label>
+              </label> */}
               <div className="train-spacer"></div>
               <button className="train-search-button">
                 <Search size={18} className="icon" />

@@ -3,6 +3,58 @@ body {
     font-family: Arial, sans-serif;
     /* background-color: black !important; */
   }
+
+  /* User profile styles */
+/* .user-profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+}
+
+.user-profile:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.logout-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #ff0000;
+} */
+
   
   .navbar {
     display: flex !important;
@@ -58,6 +110,20 @@ body {
     transition: background-color 0.3s;
     position: absolute;
     right: 40px;
+  }
+
+  .download-btn1 {
+    background-color: #FFCC00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 40px;
+    top: 30px;
   }
   
   .download-btn:hover {
@@ -123,6 +189,14 @@ body {
     .download-btn {
       margin-top: 0px;
       width: 50%;
+      text-align: center;
+      right: 0;
+      position: relative;
+    }
+
+    .download-btn1 {
+      margin-top: 0px;
+      width: 100%;
       text-align: center;
       right: 0;
       position: relative;

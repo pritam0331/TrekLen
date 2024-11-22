@@ -8,7 +8,13 @@ import './Signin.css';
 // import 'aos/dist/aos.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
-function Signin() {
+function Signin({ onSigninSuccess }) {
+  const handleSignin = () => {
+    // Simulate signup logic
+    console.log("Signup successful");
+    onSigninSuccess(); // Notify parent component
+  };
+
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
   const [email, setEmail] = useState('');
@@ -140,7 +146,7 @@ function Signin() {
                 </button>
                 {errors.password && <div className="error-message1">{errors.password}</div>}
               </div>
-              <button type="submit" className="signin-button">SIGN IN</button>
+              <button type="submit" className="signin-button" onClick={handleSignin}>SIGN IN</button>
               {errors.general && <div className="error-message1">{errors.general}</div>}
               <div className="signin-link">
                 Don't have an account? <a href="/signup">Sign up</a>

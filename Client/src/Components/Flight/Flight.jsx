@@ -224,7 +224,7 @@ function Flight() {
     <>
       <section className="flight-booking-section">
         <div className="flight-header-content">
-          <h1 className="flight-main-heading">navigate roads with comforts</h1>
+          <h1 className="flight-main-heading">navigate sky with comforts</h1>
           <p className="flight-subheading">Find Countless Flights Options & Deals To Various Destinations Around The World</p>
         </div>
 
@@ -249,9 +249,9 @@ function Flight() {
               Flights
             </button>
             <div className="flight-spacer"></div>
-            <button className="flight-support-button">
+            <button className="flight-support-button"><a className="contact" href="/CustomerService">
               <Headphones className="icon" />
-              Customer Support
+              Customer Support</a>
             </button>
           </div>
 
@@ -265,10 +265,10 @@ function Flight() {
                 <input type="radio" name="tripType" checked={tripType === 'roundTrip'} onChange={() => setTripType('roundTrip')} />
                 Round Trip
               </label>
-              <label className={`radio-label ${tripType === 'multiCity' ? 'selected' : ''}`}>
+              {/* <label className={`radio-label ${tripType === 'multiCity' ? 'selected' : ''}`}>
                 <input type="radio" name="tripType" checked={tripType === 'multiCity'} onChange={() => setTripType('multiCity')} />
                 Multi-City
-              </label>
+              </label> */}
               <select className="flight-trip-select" value={travelClass}
                 onChange={(e) => setTravelClass(e.target.value)}>
                 <option value="economy">Economy</option>
@@ -300,10 +300,10 @@ function Flight() {
                 <input type="radio" name="fareType" checked={fareType === 'regular'} onChange={() => setFareType('regular')} />
                 Regular Fare
               </label>
-              <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
+              {/* <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
                 <input type="radio" name="fareType" checked={fareType === 'student'} onChange={() => setFareType('student')} />
                 Student Fare
-              </label>
+              </label> */}
               <div className="flight-spacer"></div>
               <button className="flight-search-button">
                 <Search size={18} className="icon" />

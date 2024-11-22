@@ -14,6 +14,7 @@ import Chatbot from "./Components/chatbot/Chatbot";
 import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
 import CustomerService from "./Components/CustomerService/CustomerService";
+import PrivatePortal from "./Components/PrivatePortal/PrivatePortal";
 function App() {
   return (
     <>
@@ -24,7 +25,9 @@ function App() {
           <Route path="/flight" element={<Flight />} />
           <Route path="/train" element={<Train />} />
           <Route path="/bus" element={<Bus />}></Route>
+          <Route element={<PrivatePortal/>}>
           <Route path="/CustomerService" element={<CustomerService />}></Route>
+          </Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/signin" element={<Signin />}></Route>
         </Routes>
