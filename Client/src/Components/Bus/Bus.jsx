@@ -131,18 +131,18 @@ function Flight() {
         </div>
       </div> */}
 
-        <h2 className="bus-cta-text">Start Booking Your Flight Now</h2>
+        <h2 className="bus-cta-text">Start Booking Your Buses Now</h2>
 
         <div className="bus-booking-container">
           <div className="bus-nav-buttons">
             <button className="bus-nav-button active">
               <BusIcon className="icon" />
-              Flights
+              Buses
             </button>
             <div className="bus-spacer"></div>
-            <button className="bus-support-button">
+            <button className="bus-support-button"><a className="contact" href="/CustomerService">
               <Headphones className="icon" />
-              Customer Support
+              Customer Support</a>
             </button>
           </div>
 
@@ -156,16 +156,15 @@ function Flight() {
                 <input type="radio" name="tripType" checked={tripType === 'roundTrip'} onChange={() => setTripType('roundTrip')} />
                 Round Trip
               </label>
-              <label className={`radio-label ${tripType === 'multiCity' ? 'selected' : ''}`}>
+              {/* <label className={`radio-label ${tripType === 'multiCity' ? 'selected' : ''}`}>
                 <input type="radio" name="tripType" checked={tripType === 'multiCity'} onChange={() => setTripType('multiCity')} />
                 Multi-City
-              </label>
+              </label> */}
               <select className="bus-trip-select" value={travelClass}
                 onChange={(e) => setTravelClass(e.target.value)}>
-                <option value="economy">Economy</option>
-                <option value="premiumEconomy">Premium Economy</option>
-                <option value="business">Business Class</option>
-                <option value="first">First Class</option>
+                <option value="Non-AC">NON-AC</option>
+                <option value="AC">AC</option>
+                <option value="double-dacker">Double-Dacker</option>
               </select>
             </div>
 
@@ -191,10 +190,10 @@ function Flight() {
                 <input type="radio" name="fareType" checked={fareType === 'regular'} onChange={() => setFareType('regular')} />
                 Regular Fare
               </label>
-              <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
+              {/* <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
                 <input type="radio" name="fareType" checked={fareType === 'student'} onChange={() => setFareType('student')} />
                 Student Fare
-              </label>
+              </label> */}
               <div className="bus-spacer"></div>
               <button className="bus-search-button">
                 <Search size={18} className="icon" />

@@ -84,7 +84,7 @@
   .chatbox {
     overflow-y: auto;
     overflow-x: hidden;
-    height: 510px;
+    height: 350px;
     padding: 30px 20px 100px;
   }
   
