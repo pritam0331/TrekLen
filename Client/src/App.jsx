@@ -13,6 +13,7 @@ import Chatbot from "./Components/chatbot/Chatbot";
 // import Signup from './Components/Signup/Signup';
 import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
+import Details from "./Components/details_page/details";
 import CustomerService from "./Components/CustomerService/CustomerService";
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/CustomerService" element={<CustomerService />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/signin" element={<Signin />}></Route>
+          <Route path="/details" element={<Details />} />
         </Routes>
         <Chatbot />
         <Footer />
