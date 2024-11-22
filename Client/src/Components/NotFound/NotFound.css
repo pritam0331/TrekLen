@@ -1,0 +1,28 @@
+.not-found {
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .not-found h1 {
+    font-size: 5rem;
+    color: #e74c3c;
+  }
+  
+  .not-found p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .not-found .back-home {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .not-found .back-home:hover {
+    text-decoration: underline;
+  }
+  
