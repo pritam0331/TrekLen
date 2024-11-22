@@ -205,7 +205,7 @@ function Train() {
                 One Way
               </label>
 
-              <label
+              {/* <label
                 className={`radio-label ${
                   tripType === "roundTrip" ? "selected" : ""
                 }`}>
@@ -215,7 +215,7 @@ function Train() {
                   checked={tripType === "roundTrip"}
                   onChange={() => setTripType("roundTrip")}
                 />
-              {/* <label className={`radio-label ${tripType === 'roundTrip' ? 'selected' : ''}`}>
+              <label className={`radio-label ${tripType === 'roundTrip' ? 'selected' : ''}`}>
                 <input type="radio" name="tripType" checked={tripType === 'roundTrip'} onChange={() => setTripType('roundTrip')} />
 
                 Round Trip
@@ -235,8 +235,8 @@ function Train() {
               <select
                 className="train-trip-select"
                 value={travelClass}
-=======
-              </label> */}
+======= */}
+              {/* </label> */}
               <select className="train-trip-select" value={travelClass}
 
                 onChange={(e) => setTravelClass(e.target.value)}>
@@ -265,16 +265,16 @@ function Train() {
                 placeholder="Depart Date"
                 className="input-field"
               />
-              {tripType === "roundTrip" && (
+              {/* {tripType === "roundTrip" && (
                 <input
                   type="text"
                   placeholder="Return Date"
                   className="input-field"
                 />
-              )}
+              )} */}
 
-              <input type="text" placeholder="Destination" className="input-field" />
-              <input type="text" placeholder="Depart Date" className="input-field" />
+              {/* <input type="text" placeholder="Destination" className="input-field" />
+              <input type="text" placeholder="Depart Date" className="input-field" /> */}
               {/* {tripType === 'roundTrip' && (
                 <input type="text" placeholder="Return Date" className="input-field" />
               )} */}
@@ -306,7 +306,7 @@ function Train() {
                 />
                 Regular Fare
               </label>
-              <label
+              {/* <label
                 className={`radio-labels ${
                   fareType === "student" ? "selected" : ""
                 }`}>
@@ -316,6 +316,7 @@ function Train() {
                   checked={fareType === "student"}
                   onChange={() => setFareType("student")}
                 />
+                </label> */}
               {/* <label className={`radio-labels ${fareType === 'student' ? 'selected' : ''}`}>
                 <input type="radio" name="fareType" checked={fareType === 'student'} onChange={() => setFareType('student')} />
                 Student Fare

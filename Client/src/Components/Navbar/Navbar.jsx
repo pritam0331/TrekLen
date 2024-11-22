@@ -76,8 +76,6 @@ const Navbar = () => {
           // Sign Up button for non-logged-in users
           <button className="download-btn"><a href="/signup">Sign Up</a></button>
         )}
-        <li><a href="/CustomerService">Customer Services</a></li>
-        <button className="download-btn"><a href="/signup">Log-In</a></button>
       </ul>
       <div className="menu-icon" onClick={toggleMenu}>
         <div className={`bar ${isOpen ? "bar1" : ""}`}></div>

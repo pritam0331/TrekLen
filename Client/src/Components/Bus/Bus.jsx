@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Bus.css';
 import { BusIcon, Headphones, User, Search, ArrowLeftRight, MapPin } from 'lucide-react';
 import img from './bus.jpeg';
@@ -111,6 +112,45 @@ function Flight() {
 
   const [passengers, setPassengers] = useState(1);
 
+  const buses = [
+    { name: "Volvo AC", time: "08:30 AM" },
+    { name: "Neeta Bus", time: "10:00 AM" },
+    { name: "KSRTC", time: "05:15 PM" },
+  ];
+  
+  const navigate = useNavigate();
+  
+  const handleSearch = () => {
+    const origin = document.querySelector('[placeholder="Origin"]').value;
+    const destination = document.querySelector(
+      '[placeholder="Destination"]'
+    ).value;
+    const departDate = document.querySelector(
+      '[placeholder="Depart Date"]'
+    ).value;
+    const returnDate =
+      tripType === "roundTrip"
+        ? document.querySelector('[placeholder="Return Date"]').value
+        : null;
+  
+    // Pass the selected bus(es) as an array (even if it's just one bus)
+    const selectedBuses = [buses[0]]; // Wrap the selected bus in an array
+  
+    navigate("/details", {
+      state: {
+        tripType,
+        travelClass,
+        passengers,
+        fareType,
+        origin,
+        destination,
+        departDate,
+        returnDate,
+        buses,
+      },
+    });
+  };
+
   return (
     <>
       <section className="bus-booking-section">
@@ -195,7 +235,7 @@ function Flight() {
                 Student Fare
               </label> */}
               <div className="bus-spacer"></div>
-              <button className="bus-search-button">
+              <button className="bus-search-button" onClick={handleSearch}>
                 <Search size={18} className="icon" />
                 Search
               </button>
