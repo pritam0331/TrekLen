@@ -15,6 +15,9 @@ import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
 import CustomerService from "./Components/CustomerService/CustomerService";
 import PrivatePortal from "./Components/PrivatePortal/PrivatePortal";
+import Terms from "./Components/Terms/Terms";
+import NotFound from "./Components/NotFound/NotFound";
+import Privacy from "./Components/Privacy/Privacy";
 function App() {
   return (
     <>
@@ -30,6 +33,9 @@ function App() {
           </Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/signin" element={<Signin />}></Route>
+          <Route path="/terms" element={<Terms />}></Route>
+          <Route path="*" element={<NotFound />} />
+          <Route path="/privacy" element={<Privacy />}></Route>
         </Routes>
         <Chatbot />
         <Footer />
